@@ -1,17 +1,12 @@
-import { Button } from '@heroui/react'
 import Header from '../components/Header'
+import Content from '../components/Content'
 
 function App() {
   return (
-    <>
+    <div className='flex min-h-screen flex-col'>
       <Header />
-      <main className='flex h-screen w-full flex-col items-center gap-6'>
-        <section className='flex flex-col items-center gap-6'>
-          <h1 className='font-black'>Hello, world</h1>
-          <Button color='primary'>Button</Button>
-        </section>
-      </main>
-    </>
+      <Content />
+    </div>
   )
 }
 
