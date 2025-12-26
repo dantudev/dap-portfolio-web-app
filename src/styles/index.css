@@ -1,7 +1,8 @@
+@config '../../tailwind.config.js';
 @import 'tailwindcss';
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter Variable', 'Inter', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,4 +14,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
