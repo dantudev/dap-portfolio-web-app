@@ -3,7 +3,7 @@ import { Tooltip } from '@heroui/tooltip'
 
 function ScrollDownIndicator() {
   const handleClick = () => {
-    const target = document.getElementById('section-2') // TODO: Adjust target ID when section 2 is defined
+    const target = document.getElementById('experience') // TODO: Adjust target ID when section 2 is defined
     if (target) {
       target.scrollIntoView({ behavior: 'smooth' })
     }
