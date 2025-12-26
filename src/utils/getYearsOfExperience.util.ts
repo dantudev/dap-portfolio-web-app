@@ -1,6 +1,5 @@
+import { START_YEAR } from '@app/consts/global.consts'
 import { formatExperienceYears } from './formatPlusSignByLang.util'
-
-const START_YEAR: number = 2023
 
 export function getYearsOfExperience(): string {
   const currentYear = new Date().getFullYear()
