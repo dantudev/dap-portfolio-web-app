@@ -1,0 +1,5 @@
+export { DownloadIcon } from './DownloadIcon'
+export { EmailIcon } from './EmailIcon'
+export { MapPinIcon } from './MapPinIcon'
+export { LinkedinIcon } from './LinkedinIcon'
+export { GithubIcon } from './GithubIcon'
