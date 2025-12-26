@@ -2,19 +2,16 @@ import { DownloadIcon } from '@assets/icons/DownloadIcon'
 import { EmailIcon, GithubIcon, LinkedinIcon } from '@assets/icons'
 import { Button } from '@heroui/button'
 import { CV_URL, GITHUB_URL, LINKEDIN_URL } from '@app/consts/global.consts'
+import { openInNewTab, goToSection } from '@utils/index'
 
 function BottomHomeButtons() {
-  const handleOpenNewTab = (url: string) => {
-    window.open(url, '_blank', 'noopener,noreferrer')
-  }
-
   return (
     <div className='flex w-full justify-center gap-6'>
       <Button
         variant='faded'
         aria-label='Download my CV'
         className='font-bold'
-        onPress={() => handleOpenNewTab(CV_URL)}
+        onPress={() => openInNewTab(CV_URL)}
         startContent={
           <DownloadIcon
             height={18}
@@ -29,6 +26,7 @@ function BottomHomeButtons() {
         variant='faded'
         aria-label='Contact'
         className='font-bold'
+        onPress={() => goToSection('contact')}
         startContent={
           <EmailIcon
             height={18}
@@ -43,7 +41,7 @@ function BottomHomeButtons() {
         isIconOnly
         aria-label='Linkedin'
         variant='faded'
-        onPress={() => handleOpenNewTab(LINKEDIN_URL)}
+        onPress={() => openInNewTab(LINKEDIN_URL)}
       >
         <LinkedinIcon
           height={24}
@@ -55,7 +53,7 @@ function BottomHomeButtons() {
         isIconOnly
         aria-label='Github'
         variant='faded'
-        onPress={() => handleOpenNewTab(GITHUB_URL)}
+        onPress={() => openInNewTab(GITHUB_URL)}
       >
         <GithubIcon
           height={24}
