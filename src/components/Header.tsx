@@ -42,11 +42,16 @@ function Header() {
             Projects
           </Link>
         </NavbarItem>
+        <NavbarItem>
+          <Link
+            color='foreground'
+            href='#'
+          >
+            Stack
+          </Link>
+        </NavbarItem>
       </NavbarContent>
       <NavbarContent justify='end'>
-        <NavbarItem className='hidden lg:flex'>
-          <Link href='#'>Login</Link>
-        </NavbarItem>
         <NavbarItem>
           <Button
             as={Link}
