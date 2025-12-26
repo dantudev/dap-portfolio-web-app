@@ -41,9 +41,14 @@ function Header() {
 
     const navbarHeight =
       document.querySelector('nav')?.getBoundingClientRect().height || 0
-    const targetTop = el.offsetTop - navbarHeight
+    const elTop = el.getBoundingClientRect().top + window.scrollY
+    const targetTop = elTop - navbarHeight
 
-    window.scrollTo({ top: targetTop, behavior: 'smooth' })
+    window.scrollTo({
+      top: targetTop,
+      behavior: 'smooth',
+    })
+
     setActiveSection(href)
 
     setTimeout(() => {
@@ -131,10 +136,8 @@ function Header() {
       <NavbarContent justify='end'>
         <NavbarItem>
           <Button
-            as={Link}
-            color={activeSection === '#contact' ? 'primary' : 'primary'}
-            href='#contact'
             variant='flat'
+            color='primary'
             className='font-bold'
             onPress={() => handleNavClick('#contact')}
           >
