@@ -6,7 +6,7 @@ import { openInNewTab, goToSection } from '@utils/index'
 
 function BottomHomeButtons() {
   return (
-    <div className='flex w-full justify-center gap-6'>
+    <div className='flex flex-wrap justify-center gap-2 md:gap-6'>
       <Button
         variant='faded'
         aria-label='Download my CV'
