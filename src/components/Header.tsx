@@ -84,8 +84,10 @@ function Header() {
   }, [])
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    if (window.location.hash) handleNavClick(window.location.hash)
+    if (window.location.hash) {
+      const hash = window.location.hash
+      requestAnimationFrame(() => handleNavClick(hash))
+    }
   }, [])
 
   return (
@@ -145,7 +147,7 @@ function Header() {
         {MENU_ITEMS.map((item) => (
           <NavbarMenuItem key={item.href}>
             <Link
-              className='w-full'
+              className='w-full font-bold'
               href={item.href}
               size='lg'
               color={activeSection === item.href ? 'primary' : 'foreground'}
