@@ -15,7 +15,7 @@ function ScrollDownIndicator() {
       showArrow={true}
     >
       <div
-        className={styles['mouse-icon'] + ' cursor-pointer'}
+        className={styles['mouse-icon'] + ' hidden cursor-pointer sm:block'}
         onClick={handleClick}
       >
         <div className={styles['scroll-wheel']} />
