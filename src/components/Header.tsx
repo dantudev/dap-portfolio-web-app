@@ -1,3 +1,4 @@
+import { MENU_ITEMS } from '@app/consts/navigation.consts'
 import {
   Button,
   Link,
@@ -10,18 +11,6 @@ import {
   NavbarMenuToggle,
 } from '@heroui/react'
 import { useEffect, useRef, useState } from 'react'
-
-interface MenuItem {
-  label: string
-  href: string
-}
-
-const MENU_ITEMS: MenuItem[] = [
-  { label: 'Home', href: '#home' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Stack', href: '#stack' },
-]
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
