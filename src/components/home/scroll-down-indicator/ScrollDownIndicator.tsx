@@ -1,9 +1,10 @@
+import { MENU_ITEMS } from '@app/consts/navigation.consts'
 import styles from './ScrollDownIndicator.module.css'
 import { Tooltip } from '@heroui/tooltip'
 
 function ScrollDownIndicator() {
   const handleClick = () => {
-    const target = document.getElementById('experience') // TODO: Adjust target ID when section 2 is defined
+    const target = document.getElementById(MENU_ITEMS[1].id)
     if (target) {
       target.scrollIntoView({ behavior: 'smooth' })
     }

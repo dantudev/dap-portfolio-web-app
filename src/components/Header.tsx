@@ -1,3 +1,4 @@
+import { MENU_ITEMS } from '@app/consts/navigation.consts'
 import {
   Button,
   Link,
@@ -10,18 +11,6 @@ import {
   NavbarMenuToggle,
 } from '@heroui/react'
 import { useEffect, useRef, useState } from 'react'
-
-interface MenuItem {
-  label: string
-  href: string
-}
-
-const MENU_ITEMS: MenuItem[] = [
-  { label: 'Home', href: '#home' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Stack', href: '#stack' },
-]
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -114,23 +103,25 @@ function Header() {
         className='hidden gap-4 sm:flex'
         justify='center'
       >
-        {MENU_ITEMS.map((item) => (
-          <NavbarItem
-            key={item.href}
-            isActive={activeSection === item.href}
-          >
-            <Link
-              color={activeSection === item.href ? 'primary' : 'foreground'}
-              href={item.href}
-              onClick={(e) => {
-                e.preventDefault()
-                handleNavClick(item.href)
-              }}
+        {MENU_ITEMS.filter((item) => item.showInHeader !== false).map(
+          (item) => (
+            <NavbarItem
+              key={item.href}
+              isActive={activeSection === item.href}
             >
-              {item.label}
-            </Link>
-          </NavbarItem>
-        ))}
+              <Link
+                color={activeSection === item.href ? 'primary' : 'foreground'}
+                href={item.href}
+                onClick={(e) => {
+                  e.preventDefault()
+                  handleNavClick(item.href)
+                }}
+              >
+                {item.label}
+              </Link>
+            </NavbarItem>
+          ),
+        )}
       </NavbarContent>
 
       <NavbarContent justify='end'>
@@ -147,22 +138,24 @@ function Header() {
       </NavbarContent>
 
       <NavbarMenu>
-        {MENU_ITEMS.map((item) => (
-          <NavbarMenuItem key={item.href}>
-            <Link
-              className='w-full font-bold'
-              href={item.href}
-              size='lg'
-              color={activeSection === item.href ? 'primary' : 'foreground'}
-              onClick={(e) => {
-                e.preventDefault()
-                handleNavClick(item.href)
-              }}
-            >
-              {item.label}
-            </Link>
-          </NavbarMenuItem>
-        ))}
+        {MENU_ITEMS.filter((item) => item.showInHeader !== false).map(
+          (item) => (
+            <NavbarMenuItem key={item.href}>
+              <Link
+                className='w-full font-bold'
+                href={item.href}
+                size='lg'
+                color={activeSection === item.href ? 'primary' : 'foreground'}
+                onClick={(e) => {
+                  e.preventDefault()
+                  handleNavClick(item.href)
+                }}
+              >
+                {item.label}
+              </Link>
+            </NavbarMenuItem>
+          ),
+        )}
       </NavbarMenu>
     </Navbar>
   )
