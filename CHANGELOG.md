@@ -1,5 +1,10 @@
 # Project Changelog
 
+## [0.2.0]
+
+- feat(app): added about section
+- fix: hiding contact tab in header
+
 ## [0.1.0]
 
 - Added Home section components
