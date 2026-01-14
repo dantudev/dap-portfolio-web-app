@@ -1,5 +1,6 @@
 import { MENU_ITEMS } from '@app/consts/navigation.consts'
 import Home from './home/Home'
+import { About } from './about/About'
 
 function Content() {
   return (
@@ -12,7 +13,11 @@ function Content() {
         >
           {section.id === 'home' ? (
             <Home />
-          ) : (
+          ) :
+          section.id === 'about' ? (
+            <About />
+          ) :
+          (
             <h1 className='text-5xl font-bold'>{section.label}</h1>
           )}
         </section>
