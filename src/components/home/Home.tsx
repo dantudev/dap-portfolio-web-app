@@ -6,7 +6,7 @@ import ScrollDownIndicator from './scroll-down-indicator/ScrollDownIndicator'
 
 function Home() {
   return (
-    <section
+    <div
       id='home'
       className='flex w-full flex-1 flex-col items-center justify-center gap-6'
     >
@@ -22,7 +22,7 @@ function Home() {
         <BottomHomeButtons />
       </div>
       <ScrollDownIndicator />
-    </section>
+    </div>
   )
 }
 
