@@ -27,13 +27,14 @@
     /* Paths */
     "baseUrl": ".",
     "paths": {
+      "@/*": ["src/*"],
       "@assets/*": ["src/assets/*"],
       "@app/*": ["src/app/*"],
       "@config/*": ["src/config/*"],
       "@components/*": ["src/components/*"],
       "@hooks/*": ["src/hooks/*"],
       "@styles/*": ["src/styles/*"],
-      "@utils/*": ["src/utils/*"]
+      "@utils/*": ["src/utils/*"],
     }
   },
   "include": ["src", "src/config/hero.ts"]

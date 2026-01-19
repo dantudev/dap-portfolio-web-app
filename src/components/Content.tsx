@@ -1,6 +1,7 @@
 import { MENU_ITEMS } from '@app/consts/navigation.consts'
 import Home from './home/Home'
 import { About } from './about/About'
+import { Experience } from './experience/Experience'
 
 function Content() {
   return (
@@ -9,15 +10,15 @@ function Content() {
         <section
           key={section.id}
           id={section.id}
-          className={`${section.bg} flex min-h-dvh w-full items-center justify-center`}
+          className={`${section.bg ?? ''} flex min-h-dvh w-full items-center justify-center md:px-36`}
         >
           {section.id === 'home' ? (
             <Home />
-          ) :
-          section.id === 'about' ? (
+          ) : section.id === 'about' ? (
             <About />
-          ) :
-          (
+          ) : section.id === 'experience' ? (
+            <Experience />
+          ) : (
             <h1 className='text-5xl font-bold'>{section.label}</h1>
           )}
         </section>
