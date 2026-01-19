@@ -1,5 +1,10 @@
 # Project Changelog
 
+## [0.3.0]
+
+- feat: calculating experience in yrs mth for work exp
+- feat(components)!: experience section
+
 ## [0.2.0]
 
 - feat(app): added about section

@@ -6,7 +6,6 @@ export const MENU_ITEMS = [
     id: 'experience',
     label: 'Experience',
     href: '#experience',
-    bg: 'bg-blue-100',
   },
   { id: 'projects', label: 'Projects', href: '#projects', bg: 'bg-green-100' },
   { id: 'stack', label: 'Stack', href: '#stack', bg: 'bg-yellow-100' },
