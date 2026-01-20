@@ -1,6 +1,6 @@
 interface Experiences {
   company?: string
-  description: string
+  description?: string
   period: string
   technologies: string[]
   title: string
