@@ -81,9 +81,11 @@ export default function Timeline({
                       <span>{location}</span>
                     </div>
                   </div>
-                  <p className='text-muted-foreground text-pretty text-sm sm:text-base'>
-                    {description}
-                  </p>
+                  {description && (
+                    <p className='text-muted-foreground text-pretty text-sm sm:text-base'>
+                      {description}
+                    </p>
+                  )}
                   <div className='flex flex-wrap items-center gap-2'>
                     {visibleTechs.map((tech) => (
                       <Chip
