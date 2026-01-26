@@ -1,11 +1,12 @@
-import type { Experiences } from 'src/types/experiences.types'
+import type { Experience } from '@/types/experience.types'
 
-export const workExperiences: Experiences[] = [
+export const workExperiences: Experience[] = [
   {
     logo: '/images/dekra_logo.webp',
     title: 'Frontend Developer & UX/UI Designer',
     company: 'DEKRA Digital & Product Solutions',
-    period: 'August 2023 - Present',
+    startDate: '2023-08',
+    endDate: null, // Present
     description:
       'Design and development of web applications supporting AI solutions (e.g., chatbots, image recognition tools, internal dashboards). Bridging frontend development with UX/UI design responsibilities, while collaborating with international teams across different countries using English as the main working language.',
     technologies: [
@@ -31,7 +32,8 @@ export const workExperiences: Experiences[] = [
   },
   {
     title: 'Software Developer',
-    period: 'January 2023 - June 2023',
+    startDate: '2023-01',
+    endDate: '2023-06',
     description:
       'Delivered full-stack features for enterprise-level applications using a Java/Spring Boot backend, Angular frontend and Android development. Optimized application responsiveness and ensured high-quality code through unit testing and agile collaboration within an international cross-functional team.',
     technologies: [
@@ -57,7 +59,8 @@ export const workExperiences: Experiences[] = [
   },
   {
     title: 'AI Intern',
-    period: 'March 2022 - June 2022',
+    startDate: '2022-03',
+    endDate: '2022-06',
     description:
       'Executed an intensive upskilling program in Artificial Intelligence and Machine Learning, transitioning from theoretical foundations to practical application. Supported the AI department in data preprocessing and model testing, contributing to the optimization of internal data pipelines while gaining hands-on experience with Microsoft Azure AI services.',
     technologies: [
@@ -70,14 +73,13 @@ export const workExperiences: Experiences[] = [
   },
 ]
 
-export const educationExperiences: Experiences[] = [
+export const educationExperiences: Experience[] = [
   {
     logo: '/images/zaidin.png',
     title: 'Curso de Especialización, Inteligencia Artificial & Big Data',
     company: 'IES Zaidín-Vergeles',
-    period: 'September 2023 - June 2025',
-    description:
-      'Design and development of web applications supporting AI solutions (e.g., chatbots, image recognition tools, internal dashboards). Bridging frontend development with UX/UI design responsibilities, while collaborating with international teams across different countries using English as the main working language.',
+    startDate: '2023-09',
+    endDate: '2025-06',
     technologies: [
       'Python',
       'R',
@@ -99,9 +101,8 @@ export const educationExperiences: Experiences[] = [
     logo: '/images/cpifpalanturing_logo.webp',
     title: 'CFGS, Desarrollo de Aplicaciones Multiplataforma',
     company: 'Centro Público Integrado de FP Alan Turing',
-    period: 'September 2021 - June 2023',
-    description:
-      'Developed and maintained multiple client projects, implemented responsive designs, and integrated third-party APIs for enhanced functionality.',
+    startDate: '2021-09',
+    endDate: '2023-06',
     technologies: [
       'Java',
       'Angular',
@@ -127,13 +128,15 @@ export const educationExperiences: Experiences[] = [
     logo: '/images/iesmartinaldehuela.webp',
     title: 'Bachillerato, Tecnología de la ingeniería',
     company: 'IES Martín Aldehuela',
-    period: 'September 2019 - June 2021',
+    startDate: '2019-09',
+    endDate: '2021-06',
     technologies: [],
     location: 'Málaga, Spain',
   },
   {
     title: 'Educación Secundaria Obligatoria (ESO), Científico-tecnológico',
-    period: 'September 2015 - June 2019',
+    startDate: '2015-09',
+    endDate: '2019-06',
     technologies: [],
     location: 'Málaga, Spain',
   },

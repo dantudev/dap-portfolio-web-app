@@ -1,17 +1,20 @@
+import type { Experience } from '@/types/experience.types'
+import { formatPeriod, formatPeriodWithDuration } from '@/utils'
 import { CalendarIcon, MapPinIcon } from '@assets/icons'
 import { Avatar } from '@heroui/avatar'
 import { Chip } from '@heroui/chip'
 import { Tooltip } from '@heroui/tooltip'
-import type { Experiences } from 'src/types/experiences.types'
 
 type TimelineProps = {
-  experiences: Experiences[]
-  max_visible_chips?: number
+  experiences: Experience[]
+  maxVisibleChips?: number
+  calculateTotalPeriod?: boolean
 }
 
 export default function Timeline({
   experiences,
-  max_visible_chips = 5,
+  maxVisibleChips = 5,
+  calculateTotalPeriod = true,
 }: TimelineProps) {
   return (
     <div className='max-w-(--breakpoint-sm) mx-auto px-6 py-12 md:py-20'>
@@ -24,7 +27,8 @@ export default function Timeline({
             {
               company,
               description,
-              period,
+              startDate,
+              endDate,
               technologies,
               title,
               logo,
@@ -32,13 +36,16 @@ export default function Timeline({
             },
             index,
           ) => {
-            const visibleTechs = technologies.slice(0, max_visible_chips)
-            const hiddenTechs = technologies.slice(max_visible_chips)
+            const visibleTechs = technologies.slice(0, maxVisibleChips)
+            const hiddenTechs = technologies.slice(maxVisibleChips)
             const hasMoreTechs = hiddenTechs.length > 0
+            const periodDisplay = calculateTotalPeriod
+              ? formatPeriodWithDuration(startDate, endDate)
+              : formatPeriod(startDate, endDate)
 
             return (
               <div
-                key={index}
+                key={`${index}-${startDate}-${title}`}
                 className='relative pb-12 pl-8 last:pb-0'
               >
                 {/* Timeline dot */}
@@ -70,16 +77,18 @@ export default function Timeline({
                         height={20}
                         width={20}
                       />
-                      <span>{period}</span>
+                      <span>{periodDisplay}</span>
                     </div>
-                    <div className='mt-2 flex items-center gap-2 text-sm'>
-                      <MapPinIcon
-                        height={20}
-                        width={20}
-                        strokeWidth={2}
-                      />
-                      <span>{location}</span>
-                    </div>
+                    {location && (
+                      <div className='mt-2 flex items-center gap-2 text-sm'>
+                        <MapPinIcon
+                          height={20}
+                          width={20}
+                          strokeWidth={2}
+                        />
+                        <span>{location}</span>
+                      </div>
+                    )}
                   </div>
                   {description && (
                     <p className='text-muted-foreground text-pretty text-sm sm:text-base'>
