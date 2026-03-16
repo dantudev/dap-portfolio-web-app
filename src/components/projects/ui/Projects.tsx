@@ -2,7 +2,7 @@ import {
   ProjectsTabEnum,
   type ProjectsTab,
 } from '@/components/projects/types/projects.types'
-import { firstLetterUppercase } from '@/utils/firstLetterUpercase'
+import { firstLetterUppercase } from '@/utils'
 import { Tab, Tabs } from '@heroui/react'
 import { useState } from 'react'
 import PORTFOLIO_PROJECTS_DATA from '../data/project.consts'
