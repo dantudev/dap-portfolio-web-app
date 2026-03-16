@@ -1,5 +1,10 @@
 # Project Changelog
 
+## [0.4.0]
+
+- feat(components)!: projects section
+- fix(components): fixed consistency of files and architecture
+
 ## [0.3.0]
 
 - feat: calculating experience in yrs mth for work exp

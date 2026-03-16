@@ -1,12 +1,12 @@
 import {
   ExperienceTabEnum,
   type ExperienceTab,
-} from '@/types/experience.types'
+} from '@/components/experience/types/experience.types'
 import {
   educationExperiences,
   workExperiences,
 } from '@app/consts/content/experience.consts'
-import Timeline from '@components/ui/Timeline'
+import Timeline from '@/components/experience/ui/Timeline'
 import { Tab, Tabs } from '@heroui/tabs'
 import { useState } from 'react'
 
