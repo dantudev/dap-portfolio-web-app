@@ -55,7 +55,7 @@ function ProjectCard({
 
         <ProjectTypeChip
           type={type}
-          className='absolute top-3 right-3 z-10'
+          className='absolute right-3 top-3 z-10'
         />
       </div>
 
@@ -107,7 +107,9 @@ function ProjectCard({
             variant='flat'
             color='default'
             className='font-bold'
-            onPress={() => window.open(codeLink, '_blank')}
+            onPress={() =>
+              window.open(codeLink, '_blank', 'noopener,noreferrer')
+            }
           >
             <GithubIcon className='h-5 w-5' />
             Code
@@ -118,7 +120,9 @@ function ProjectCard({
             variant='flat'
             color='primary'
             className='font-bold'
-            onPress={() => window.open(webLink, '_blank')}
+            onPress={() =>
+              window.open(webLink, '_blank', 'noopener,noreferrer')
+            }
           >
             <URLLinkIcon className='h-5 w-5' />
             Visit
