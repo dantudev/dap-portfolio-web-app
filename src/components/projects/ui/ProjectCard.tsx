@@ -34,25 +34,29 @@ function ProjectCard({
   return (
     <div className='flex h-full w-full flex-col'>
       {/* Main Image */}
-      <div className='relative flex w-full items-center justify-center'>
-        <ProjectTypeChip
-          type={type}
-          clasName='absolute top-3 right-3'
-        />
+      <div className='relative w-full overflow-hidden rounded-[18px]'>
         {imageSrc ? (
           <Image
-            className='rounded-[18px]'
             src={imageSrc}
             alt={title}
+            className='h-full w-full object-cover'
+            removeWrapper
           />
         ) : (
           <div
-            className='flex h-52 w-full items-center justify-center rounded-[18px]'
-            style={{ backgroundColor: bgColor }}
+            className='w-full'
+            style={{ paddingTop: '56.25%', backgroundColor: bgColor }}
           >
-            {altIcon ?? <DefaultIcon className='w-22 h-22 text-[#444444]' />}
+            <div className='absolute inset-0 flex items-center justify-center'>
+              {altIcon ?? <DefaultIcon className='w-22 h-22 text-[#444444]' />}
+            </div>
           </div>
         )}
+
+        <ProjectTypeChip
+          type={type}
+          clasName='absolute top-3 right-3 z-10'
+        />
       </div>
 
       {/* Card Content */}
