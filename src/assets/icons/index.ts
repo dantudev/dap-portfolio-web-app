@@ -4,3 +4,9 @@ export { MapPinIcon } from './MapPinIcon'
 export { LinkedinIcon } from './LinkedinIcon'
 export { GithubIcon } from './GithubIcon'
 export { CalendarIcon } from './CalendarIcon'
+export {
+  DefaultIcon,
+  WebIcon,
+  MobileIcon,
+  BackendIcon,
+} from './ProjectChipsIcons'

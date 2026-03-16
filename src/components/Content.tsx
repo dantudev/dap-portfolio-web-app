@@ -2,6 +2,7 @@ import { MENU_ITEMS } from '@app/consts/navigation.consts'
 import Home from './home/Home'
 import { About } from './about/About'
 import { Experience } from './experience/Experience'
+import Projects from './projects/Projects'
 
 function Content() {
   return (
@@ -18,6 +19,8 @@ function Content() {
             <About />
           ) : section.id === 'experience' ? (
             <Experience />
+          ) : section.id === 'projects' ? (
+            <Projects />
           ) : (
             <h1 className='text-5xl font-bold'>{section.label}</h1>
           )}
