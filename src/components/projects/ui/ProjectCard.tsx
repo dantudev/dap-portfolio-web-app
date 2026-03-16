@@ -55,7 +55,7 @@ function ProjectCard({
 
         <ProjectTypeChip
           type={type}
-          clasName='absolute top-3 right-3 z-10'
+          className='absolute top-3 right-3 z-10'
         />
       </div>
 

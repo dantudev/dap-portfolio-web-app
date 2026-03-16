@@ -6,7 +6,7 @@ import type { JSX } from 'react'
 
 interface ProjectTypeChipsProps {
   type?: ProjectsTab
-  clasName?: string
+  className?: string
 }
 
 const typeStyles: Record<ProjectsTab, string> = {
@@ -25,10 +25,10 @@ const typeIcons: Record<ProjectsTab, JSX.Element> = {
 
 export function ProjectTypeChip({
   type = ProjectsTabEnum.ALL,
-  clasName = '',
+  className = '',
 }: ProjectTypeChipsProps) {
   const chip = (
-    <Chip className={`${typeStyles[type]} rounded-[14px] px-1 py-6 ${clasName}`}>
+    <Chip className={`${typeStyles[type]} rounded-[14px] px-1 py-6 ${className}`}>
       {typeIcons[type]}
     </Chip>
   )
