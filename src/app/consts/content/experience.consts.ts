@@ -1,4 +1,4 @@
-import type { Experience } from '@/types/experience.types'
+import type { Experience } from '@/components/experience/types/experience.types'
 
 export const workExperiences: Experience[] = [
   {

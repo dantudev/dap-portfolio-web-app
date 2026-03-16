@@ -7,7 +7,7 @@ export const MENU_ITEMS = [
     label: 'Experience',
     href: '#experience',
   },
-  { id: 'projects', label: 'Projects', href: '#projects', bg: 'bg-green-100' },
+  { id: 'projects', label: 'Projects', href: '#projects' },
   { id: 'stack', label: 'Stack', href: '#stack', bg: 'bg-yellow-100' },
   {
     id: 'contact',

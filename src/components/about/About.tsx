@@ -1,4 +1,4 @@
-import { ABOUT_CONTENT } from './about.consts'
+import { ABOUT_CONTENT } from './data/about.consts'
 
 export function About() {
   // TODO: Add picture

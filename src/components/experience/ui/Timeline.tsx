@@ -1,4 +1,4 @@
-import type { Experience } from '@/types/experience.types'
+import type { Experience } from '@/components/experience/types/experience.types'
 import { formatPeriod, formatPeriodWithDuration } from '@/utils'
 import { CalendarIcon, MapPinIcon } from '@assets/icons'
 import { Avatar } from '@heroui/avatar'
@@ -123,7 +123,7 @@ export default function Timeline({
                         }
                       >
                         <span className='cursor-pointer text-sm text-primary hover:underline'>
-                          +{hiddenTechs.length} others...
+                          +{hiddenTechs.length} more...
                         </span>
                       </Tooltip>
                     )}
