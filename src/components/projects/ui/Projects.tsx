@@ -1,4 +1,7 @@
-import { ProjectsTabEnum, type ProjectsTab } from '@/components/projects/types/projects.types'
+import {
+  ProjectsTabEnum,
+  type ProjectsTab,
+} from '@/components/projects/types/projects.types'
 import { firstLetterUppercase } from '@/utils/firstLetterUpercase'
 import { Tab, Tabs } from '@heroui/react'
 import { useState } from 'react'

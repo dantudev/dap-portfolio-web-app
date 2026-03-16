@@ -1,5 +1,11 @@
-interface Projects {
+interface Project {
   title: string
+  description: string
+  type: ProjectsTab
+  technologies: string[]
+  codeLink?: string
+  webLink?: string
+  imageSrc?: string
 }
 
 const ProjectsTabEnum = {
@@ -12,4 +18,4 @@ const ProjectsTabEnum = {
 type ProjectsTab = (typeof ProjectsTabEnum)[keyof typeof ProjectsTabEnum]
 
 export { ProjectsTabEnum }
-export type { Projects, ProjectsTab }
+export type { Project, ProjectsTab }
