@@ -22,7 +22,7 @@ function Projects() {
         <h1 className='text-[2.5rem] font-bold'>Projects</h1>
 
         <Tabs
-          aria-label='Experience Tabs'
+          aria-label='Projects Tabs'
           selectedKey={selectedTab}
           onSelectionChange={(key) => setSelectedTab(key as ProjectsTab)}
         >
