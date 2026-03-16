@@ -75,8 +75,6 @@ const PORTFOLIO_PROJECTS_DATA: Project[] = [
       'SQL',
       'HTML',
       'Bootstrap',
-      'HTML',
-      'SCSS',
     ],
     codeLink: `${GITHUB_BASE_URL}/TheSCPFoundation-CRUD`,
     altIcon: SCPCrudIcon({ className: 'w-30 h-30 text-[#FFEAA8]' }),
