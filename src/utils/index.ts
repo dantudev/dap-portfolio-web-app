@@ -9,4 +9,4 @@ export {
   formatDuration,
   formatDate,
 } from './experiencePeriod.util'
-export { firstLetterUppercase } from './firstLetterUppercase'
+export { firstLetterUppercase } from './firstLetterUppercase.util'

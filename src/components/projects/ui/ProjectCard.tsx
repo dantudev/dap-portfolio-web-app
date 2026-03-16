@@ -3,6 +3,7 @@ import { Button, Chip, Image, Tooltip } from '@heroui/react'
 import type React from 'react'
 import type { Project } from '../types/projects.types'
 import { ProjectTypeChip } from './ProjectTypeChip'
+import { openInNewTab } from '@/utils'
 
 interface ProjectCardProps {
   project: Project
@@ -107,9 +108,7 @@ function ProjectCard({
             variant='flat'
             color='default'
             className='font-bold'
-            onPress={() =>
-              window.open(codeLink, '_blank', 'noopener,noreferrer')
-            }
+            onPress={() => openInNewTab(codeLink)}
           >
             <GithubIcon className='h-5 w-5' />
             Code
@@ -120,9 +119,7 @@ function ProjectCard({
             variant='flat'
             color='primary'
             className='font-bold'
-            onPress={() =>
-              window.open(webLink, '_blank', 'noopener,noreferrer')
-            }
+            onPress={() => openInNewTab(webLink)}
           >
             <URLLinkIcon className='h-5 w-5' />
             Visit
