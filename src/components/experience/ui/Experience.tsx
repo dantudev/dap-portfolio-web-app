@@ -1,7 +1,7 @@
 import {
   ExperienceTabEnum,
   type ExperienceTab,
-} from '@/types/experience.types'
+} from '@/components/experience/types/experience.types'
 import {
   educationExperiences,
   workExperiences,

@@ -1,7 +1,7 @@
-import { ProjectsTabEnum, type ProjectsTab } from '@/types/projects.types'
+import { ProjectsTabEnum, type ProjectsTab } from '@/components/projects/types/projects.types'
+import { firstLetterUppercase } from '@/utils/firstLetterUpercase'
 import { Tab, Tabs } from '@heroui/react'
 import { useState } from 'react'
-import { firstLetterUppercase } from '@/utils/firstLetterUpercase'
 
 function Projects() {
   const [selectedTab, setSelectedTab] = useState<ProjectsTab>(
@@ -40,8 +40,7 @@ function Projects() {
         </Tabs>
       </div>
 
-      <div className='w-full'>
-      </div>
+      <div className='w-full'></div>
     </article>
   )
 }

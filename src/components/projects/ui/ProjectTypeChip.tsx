@@ -1,5 +1,5 @@
 import { BackendIcon, DefaultIcon, MobileIcon, WebIcon } from '@/assets/icons'
-import { type ProjectsTab, ProjectsTabEnum } from '@/types/projects.types'
+import { type ProjectsTab, ProjectsTabEnum } from '@/components/projects/types/projects.types'
 import { firstLetterUppercase } from '@/utils/firstLetterUpercase'
 import { Chip, Tooltip } from '@heroui/react'
 import type { JSX } from 'react'
