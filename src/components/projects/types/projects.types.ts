@@ -1,3 +1,5 @@
+import type { JSX } from 'react'
+
 interface Project {
   title: string
   description: string
@@ -6,6 +8,8 @@ interface Project {
   codeLink?: string
   webLink?: string
   imageSrc?: string
+  altIcon?: JSX.Element
+  bgColor?: string
 }
 
 const ProjectsTabEnum = {

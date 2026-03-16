@@ -123,7 +123,7 @@ export default function Timeline({
                         }
                       >
                         <span className='cursor-pointer text-sm text-primary hover:underline'>
-                          +{hiddenTechs.length} others...
+                          +{hiddenTechs.length} more...
                         </span>
                       </Tooltip>
                     )}

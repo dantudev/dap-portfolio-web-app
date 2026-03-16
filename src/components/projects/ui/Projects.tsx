@@ -5,6 +5,8 @@ import {
 import { firstLetterUppercase } from '@/utils/firstLetterUpercase'
 import { Tab, Tabs } from '@heroui/react'
 import { useState } from 'react'
+import PORTFOLIO_PROJECTS_DATA from '../data/project.consts'
+import ProjectCard from './ProjectCard'
 
 function Projects() {
   const [selectedTab, setSelectedTab] = useState<ProjectsTab>(
@@ -43,7 +45,19 @@ function Projects() {
         </Tabs>
       </div>
 
-      <div className='w-full'></div>
+      <div className='grid w-full grid-cols-1 gap-6 pt-4 md:grid-cols-2 lg:grid-cols-3'>
+        {PORTFOLIO_PROJECTS_DATA.filter((project) => {
+          if (selectedTab === ProjectsTabEnum.ALL) return true
+          return project.type === selectedTab
+        }).map((project) => (
+          <ProjectCard
+            key={project.title}
+            project={project}
+            altIcon={project.altIcon}
+            bgColor={project.bgColor}
+          />
+        ))}
+      </div>
     </article>
   )
 }

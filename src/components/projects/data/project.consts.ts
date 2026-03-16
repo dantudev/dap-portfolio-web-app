@@ -1,3 +1,4 @@
+import { ProgrammedPollsIcon } from '@/assets/icons'
 import { ProjectsTabEnum, type Project } from '../types/projects.types'
 
 const GITHUB_BASE_URL = 'https://github.com/DavidAntunezPerez'
@@ -6,7 +7,7 @@ const PORTFOLIO_PROJECTS_DATA: Project[] = [
   {
     title: 'Schulte Table',
     description:
-      'Interactive Web Application app to boost concentration, eye movement efficiency, and reading skills with Schulte Tables.',
+      'A modern and interactive web application for training visual perception, attention, and reading speed using Schulte tables. The project is built with React, TailwindCSS, and HeroUI, with a focus on clean design, performance, and usability.',
     type: ProjectsTabEnum.WEB,
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'ViteJS', 'HeroUI'],
     codeLink: `${GITHUB_BASE_URL}/schulte-table-web-app`,
@@ -21,7 +22,8 @@ const PORTFOLIO_PROJECTS_DATA: Project[] = [
     technologies: ['NodeJS', 'ExpressJS', 'Firebase', 'TypeScript', 'Vercel'],
     codeLink: `${GITHUB_BASE_URL}/programmed-polls-backend-rest-api`,
     webLink: 'https://programmed-polls-backend-rest-api.vercel.app/',
-    imageSrc: '',
+    altIcon: ProgrammedPollsIcon({ className: 'w-22 h-22 text-[#f2f2f2]' }),
+    bgColor: '#444444',
   },
   {
     title: 'RestaurAPP',
@@ -43,8 +45,8 @@ const PORTFOLIO_PROJECTS_DATA: Project[] = [
   {
     title: 'eTeam Maker',
     description:
-      'eTeam Maker is an app for creating and managing eSports leagues, providing player stats, team info, and transfer market updates. Built with Angular and Ionic Framework, it offers a seamless experience for eSports enthusiasts.',
-    type: ProjectsTabEnum.MOBILE,
+      'Web application for creating and managing eSports leagues, providing player stats, team info, and transfer market updates. Built with Angular and Ionic Framework, it offers a seamless experience for eSports enthusiasts.',
+    type: ProjectsTabEnum.WEB,
     technologies: [
       'Angular',
       'Ionic Framework',
@@ -61,10 +63,10 @@ const PORTFOLIO_PROJECTS_DATA: Project[] = [
     title: 'The SCP Foundation CRUD',
     description:
       'A web-based CRUD for managing SCP Foundation stories, built with Java, SQL, HTML, CSS, and JavaScript. Allows users to create, edit, and delete entries within the collaborative SCP universe.',
-    type: ProjectsTabEnum.MOBILE,
+    type: ProjectsTabEnum.WEB,
     technologies: [
       'Java',
-      'Java Server Pages (JSP)',
+      'Java Server Pages',
       'SQL',
       'HTML',
       'Bootstrap',
