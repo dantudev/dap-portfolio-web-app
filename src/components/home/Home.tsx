@@ -13,7 +13,7 @@ function Home() {
       <div className='flex flex-1 flex-col items-center justify-center gap-4 px-4'>
         <Avatar
           alt='David Antúnez Pérez'
-          className='h-[clamp(10rem,20vh,15rem)] w-[clamp(10rem,20vh,15rem)]'
+          className='h-[clamp(10rem,25vh,15rem)] w-[clamp(10rem,25vh,15rem)]'
           isBordered
           src='/images/david_avatar.webp'
         />
