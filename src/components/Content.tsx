@@ -3,6 +3,7 @@ import Home from './home/Home'
 import { About } from './about/About'
 import { Experience } from './experience/ui/Experience'
 import Projects from './projects/ui/Projects'
+import Stack from './stack/ui/Stack'
 
 function Content() {
   return (
@@ -21,6 +22,8 @@ function Content() {
             <Experience />
           ) : section.id === 'projects' ? (
             <Projects />
+          ) : section.id === 'stack' ? (
+            <Stack />
           ) : (
             <h1 className='text-5xl font-bold'>{section.label}</h1>
           )}
