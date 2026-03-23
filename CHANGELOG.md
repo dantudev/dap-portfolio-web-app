@@ -1,5 +1,10 @@
 # Project Changelog
 
+## [0.5.0]
+
+- feat(components)!: stack section
+- fix: fixed icons folder architecture and exports to avoid long files
+
 ## [0.4.0]
 
 - feat(components)!: projects section
