@@ -13,3 +13,5 @@ export {
 } from './ProjectChipsIcons'
 
 export { ProgrammedPollsIcon } from './FallbackProjectIcons'
+
+export * from './StackIcons'
