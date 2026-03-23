@@ -1,5 +1,3 @@
-import { StackItem } from "./components/StackItem"
-
 function Stack() {
   return (
     <article
@@ -8,8 +6,6 @@ function Stack() {
     >
       <div className='flex w-full flex-col items-center justify-between gap-6 md:flex-row'>
         <h1 className='text-[2.5rem] font-bold'>Stack</h1>
-
-        <StackItem title="React" color="#7D43" />
       </div>
     </article>
   )

@@ -2,22 +2,23 @@ import { DefaultIcon } from '@/assets/icons'
 
 interface StackItemProps {
   title: string
-  icon?: React.ReactNode
+  icon?: React.ComponentType<React.SVGProps<SVGSVGElement>>
   color?: string
 }
 
 export function StackItem({ title, icon, color }: StackItemProps) {
+  const Icon = icon ?? DefaultIcon
+
   return (
-    <div className={`flex flex-col items-center gap-2 rounded-lg p-4`}>
+    <div
+      className={`flex aspect-square w-24 flex-col items-center justify-center gap-2 rounded-xl p-4`}
+      style={{ backgroundColor: `${color}1A` }}
+    >
       <div className='text-4xl'>
-        {icon ? (
-          icon
-        ) : (
-          <DefaultIcon
-            className='h-12 w-12'
-            style={{ color }}
-          />
-        )}
+        <Icon
+          className='h-12 w-12'
+          style={{ color }}
+        />
       </div>
       <span
         className={`text-sm font-medium`}
