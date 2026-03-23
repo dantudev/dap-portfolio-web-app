@@ -6,7 +6,7 @@ export function StackItem({ title, icon, color }: StackItemType) {
 
   return (
     <div
-      className={`flex aspect-square w-24 flex-col items-center justify-center gap-2 rounded-xl p-4`}
+      className={`h-26 flex aspect-square w-24 flex-col items-center justify-center gap-2 rounded-xl p-4`}
       style={{ backgroundColor: `${color}1A` }}
     >
       <div className='text-4xl'>
@@ -16,7 +16,7 @@ export function StackItem({ title, icon, color }: StackItemType) {
         />
       </div>
       <span
-        className={`text-center text-sm font-medium`}
+        className={`text-center text-sm font-medium leading-4`}
         style={{ color }}
       >
         {title}

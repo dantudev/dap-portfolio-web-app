@@ -306,6 +306,7 @@ export const ExpoIcon = (props: SVGProps<SVGSVGElement>) => {
       fill='currentColor'
       xmlns='http://www.w3.org/2000/svg'
       {...props}
+      style={{ ...props.style, width: '32px', height: '32px' }}
     >
       <path
         d='M11.39 8.269c.19-.277.397-.312.565-.312.168 0 .447.035.637.312 1.49 2.03 3.95 6.075 5.765 9.06 1.184 1.945 2.093 3.44 2.28 3.63.7.714 1.66.269 2.218-.541.549-.797.701-1.357.701-1.954 0-.407-7.958-15.087-8.759-16.309C14.027.98 13.775.683 12.457.683h-.988c-1.315 0-1.505.297-2.276 1.472C8.392 3.377.433 18.057.433 18.463c0 .598.153 1.158.703 1.955.558.81 1.518 1.255 2.218.54.186-.19 1.095-1.684 2.279-3.63 1.815-2.984 4.267-7.029 5.758-9.06z'
@@ -589,6 +590,7 @@ export const AzureDevopsIcon = (props: SVGProps<SVGSVGElement>) => {
       xmlns='http://www.w3.org/2000/svg'
       fill='currentColor'
       {...props}
+      style={{ ...props.style, width: '32px', height: '32px' }}
     >
       <path d='M0 11.865l2.995-3.953 11.208-4.557v-3.292l9.828 7.188-20.078 3.896v10.969l-3.953-1.141zM32 5.932v19.536l-7.672 6.531-12.401-4.073v4.073l-7.974-9.885 20.078 2.396v-17.26z' />
     </svg>
@@ -603,6 +605,7 @@ export const VercelIcon = (props: SVGProps<SVGSVGElement>) => {
       preserveAspectRatio='xMidYMid'
       fill='currentColor'
       {...props}
+      style={{ ...props.style, width: '36px', height: '36px' }}
     >
       <g>
         <polygon
@@ -621,6 +624,7 @@ export const VSCodeIcon = (props: SVGProps<SVGSVGElement>) => {
       xmlns='http://www.w3.org/2000/svg'
       fill='currentColor'
       {...props}
+      style={{ ...props.style, width: '36px', height: '36px' }}
     >
       <mask
         id='mask0'
