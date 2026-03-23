@@ -1,17 +1,13 @@
-import type { IconProps } from './types'
+import type { SVGProps } from 'react'
 
-export const MapPinIcon = (props: IconProps) => {
+export const MapPinIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
       fill='none'
       viewBox='0 0 24 24'
       stroke='currentColor'
-      height={props.height}
-      className={props.className}
-      onClick={props.onClick}
-      width={props.width}
-      strokeWidth={props.strokeWidth}
+      {...props}
     >
       <path
         strokeLinecap='round'
