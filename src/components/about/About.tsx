@@ -1,29 +1,36 @@
 import { ABOUT_CONTENT } from './data/about.consts'
 
 export function About() {
-  // TODO: Add picture
   return (
-    <div
+    <section
       id='about'
-      className='flex flex-col xl:flex-row h-full w-full items-center justify-center gap-14 p-8'
+      className='flex min-h-dvh w-full flex-col items-start justify-center gap-6 px-6 py-16 lg:px-12'
     >
-      <figure
-        className='h-90 w-90 lg:h-150 lg:w-150 rounded-[2.5rem] bg-[#D9D9D9]'
-        aria-hidden='true'
-      />
+      <h1 className='text-[clamp(1.75rem,3vw,2.5rem)] font-bold'>About me</h1>
+      <div className='flex w-full flex-col gap-12 lg:flex-row lg:gap-16'>
+        <div className='w-full lg:w-5/12'>
+          <div className='lg:sticky lg:top-24'>
+            <div className='aspect-3/4 relative w-full overflow-hidden rounded-[2.5rem]'>
+              <img
+                src='src/assets/images/restaurapp_preview.webp'
+                alt='About me'
+                className='h-full w-full object-cover'
+              />
+            </div>
+          </div>
+        </div>
 
-      <article className='flex h-full w-full px-4 lg:w-1/2 flex-col justify-center gap-4'>
-        <h1 className='text-[2.5rem] font-bold'>About me</h1>
-
-        {ABOUT_CONTENT.map((content, index) => (
-          <p
-            key={index}
-            className='text-xl leading-relaxed'
-          >
-            {content}
-          </p>
-        ))}
-      </article>
-    </div>
+        <article className='flex w-full flex-col justify-center gap-6 lg:w-7/12'>
+          {ABOUT_CONTENT.map((content, index) => (
+            <p
+              key={index}
+              className='text-base leading-relaxed sm:text-lg lg:text-xl'
+            >
+              {content}
+            </p>
+          ))}
+        </article>
+      </div>
+    </section>
   )
 }
