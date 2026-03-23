@@ -1,12 +1,7 @@
 import { DefaultIcon } from '@/assets/icons'
+import type { StackItemType } from '../../types/stack.types'
 
-interface StackItemProps {
-  title: string
-  icon?: React.ComponentType<React.SVGProps<SVGSVGElement>>
-  color?: string
-}
-
-export function StackItem({ title, icon, color }: StackItemProps) {
+export function StackItem({ title, icon, color }: StackItemType) {
   const Icon = icon ?? DefaultIcon
 
   return (
@@ -21,7 +16,7 @@ export function StackItem({ title, icon, color }: StackItemProps) {
         />
       </div>
       <span
-        className={`text-sm font-medium`}
+        className={`text-center text-sm font-medium`}
         style={{ color }}
       >
         {title}
