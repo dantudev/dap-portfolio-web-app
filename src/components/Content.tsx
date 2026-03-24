@@ -1,8 +1,9 @@
 import { MENU_ITEMS } from '@app/consts/navigation.consts'
-import Home from './home/Home'
 import { About } from './about/About'
 import { Experience } from './experience/ui/Experience'
+import Home from './home/Home'
 import Projects from './projects/ui/Projects'
+import Stack from './stack/ui/Stack'
 
 function Content() {
   return (
@@ -11,7 +12,7 @@ function Content() {
         <section
           key={section.id}
           id={section.id}
-          className={`${section.bg ?? ''} flex min-h-dvh w-full items-center justify-center md:px-36`}
+          className={`${section.bg ?? ''} flex min-h-dvh w-full items-center justify-center px-4 md:px-[5%] lg:px-[8%] xl:px-36`}
         >
           {section.id === 'home' ? (
             <Home />
@@ -21,6 +22,8 @@ function Content() {
             <Experience />
           ) : section.id === 'projects' ? (
             <Projects />
+          ) : section.id === 'stack' ? (
+            <Stack />
           ) : (
             <h1 className='text-5xl font-bold'>{section.label}</h1>
           )}
