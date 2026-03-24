@@ -1,5 +1,11 @@
 # Project Changelog
 
+## [0.5.0]
+
+- feat(components)!: stack section
+- fix: fixed icons folder architecture and exports to avoid long files
+- fix: improved responsive design in all sections, using clap for texts and adapted and unified designs, paddings and styles
+
 ## [0.4.0]
 
 - feat(components)!: projects section

@@ -1,8 +1,11 @@
-import { ProgrammedPollsIcon } from '@/assets/icons'
 import { ProjectsTabEnum, type Project } from '../types/projects.types'
 import RestaurappImgPreview from '@assets/images/restaurapp_preview.webp'
-import { EteamMakerIcon, SchulteTableIcon, SCPCrudIcon } from '@/assets/icons/FallbackProjectIcons'
-
+import {
+  EteamMakerIcon,
+  SchulteTableIcon,
+  SCPCrudIcon,
+  ProgrammedPollsIcon,
+} from '@/assets/icons'
 
 const GITHUB_BASE_URL = 'https://github.com/DavidAntunezPerez'
 
@@ -69,13 +72,7 @@ const PORTFOLIO_PROJECTS_DATA: Project[] = [
     description:
       'A web-based CRUD for managing SCP Foundation stories, built with Java, SQL, HTML, CSS, and JSP. Allows users to create, edit, and delete entries within the collaborative SCP universe.',
     type: ProjectsTabEnum.WEB,
-    technologies: [
-      'Java',
-      'Java Server Pages',
-      'SQL',
-      'HTML',
-      'Bootstrap',
-    ],
+    technologies: ['Java', 'Java Server Pages', 'SQL', 'HTML', 'Bootstrap'],
     codeLink: `${GITHUB_BASE_URL}/TheSCPFoundation-CRUD`,
     altIcon: SCPCrudIcon({ className: 'w-30 h-30 text-[#FFEAA8]' }),
     bgColor: '#1F2029',
