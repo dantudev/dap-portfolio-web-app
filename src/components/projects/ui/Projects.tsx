@@ -1,6 +1,6 @@
 import {
-    ProjectsTabEnum,
-    type ProjectsTab,
+  ProjectsTabEnum,
+  type ProjectsTab,
 } from '@/components/projects/types/projects.types'
 import { firstLetterUppercase } from '@/utils'
 import { Tab, Tabs } from '@heroui/tabs'

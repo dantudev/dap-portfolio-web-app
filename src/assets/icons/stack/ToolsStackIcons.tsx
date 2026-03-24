@@ -60,11 +60,11 @@ export const AzureIcon = (props: SVGProps<SVGSVGElement>) => {
         >
           <stop
             offset='0'
-            stop-color='#114a8b'
+            stopColor='#114a8b'
           />
           <stop
             offset='1'
-            stop-color='#0669bc'
+            stopColor='#0669bc'
           />
         </linearGradient>
         <linearGradient
@@ -78,23 +78,23 @@ export const AzureIcon = (props: SVGProps<SVGSVGElement>) => {
         >
           <stop
             offset='0'
-            stop-opacity='.3'
+            stopOpacity='.3'
           />
           <stop
             offset='.071'
-            stop-opacity='.2'
+            stopOpacity='.2'
           />
           <stop
             offset='.321'
-            stop-opacity='.1'
+            stopOpacity='.1'
           />
           <stop
             offset='.623'
-            stop-opacity='.05'
+            stopOpacity='.05'
           />
           <stop
             offset='1'
-            stop-opacity='0'
+            stopOpacity='0'
           />
         </linearGradient>
         <linearGradient
@@ -108,11 +108,11 @@ export const AzureIcon = (props: SVGProps<SVGSVGElement>) => {
         >
           <stop
             offset='0'
-            stop-color='#3ccbf4'
+            stopColor='#3ccbf4'
           />
           <stop
             offset='1'
-            stop-color='#2892df'
+            stopColor='#2892df'
           />
         </linearGradient>
       </defs>
@@ -305,11 +305,11 @@ export const VSCodeIcon = (props: SVGProps<SVGSVGElement>) => {
           y2='99.7423'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
+          <stop stopColor='white' />
           <stop
             offset='1'
-            stop-color='white'
-            stop-opacity='0'
+            stopColor='white'
+            stopOpacity='0'
           />
         </linearGradient>
       </defs>

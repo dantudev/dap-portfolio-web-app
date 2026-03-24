@@ -7,7 +7,7 @@ export function StackItem({ title, icon, color }: StackItemType) {
   return (
     <div
       className={`h-26 flex aspect-square w-24 flex-col items-center justify-center gap-2 rounded-xl p-4`}
-      style={{ backgroundColor: `${color}1A` }}
+      style={color ? { backgroundColor: `${color}1A` } : undefined}
     >
       <div className='text-4xl'>
         <Icon

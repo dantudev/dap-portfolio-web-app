@@ -14,7 +14,7 @@ function BentoItem({ section }: BentoItemProps) {
         <div className='flex flex-wrap gap-6'>
           {section.items.map((item) => (
             <StackItem
-              key={item.title}
+              key={item.title + item.color}
               title={item.title}
               icon={item.icon}
               color={item.color}
