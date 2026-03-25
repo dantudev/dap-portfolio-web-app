@@ -1,5 +1,11 @@
 # Project Changelog
 
+## [0.5.1]
+
+- docs(utils): unified architecture and updated utils function comments
+- feat(components): added side image to about section
+- fix: fixed url naming to match the new github username
+
 ## [0.5.0]
 
 - feat(components)!: stack section
