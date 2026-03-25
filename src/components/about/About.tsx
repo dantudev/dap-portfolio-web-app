@@ -10,11 +10,11 @@ export function About() {
       <div className='flex w-full flex-col gap-12 lg:flex-row lg:gap-16'>
         <div className='w-full lg:w-5/12'>
           <div className='lg:sticky lg:top-24'>
-            <div className='aspect-3/4 relative w-full overflow-hidden rounded-[2.5rem]'>
+            <div className='sm:aspect-3/4 relative w-full overflow-hidden rounded-[2.5rem]'>
               <img
-                src='src/assets/images/restaurapp_preview.webp'
+                src='/svg/programming-about-me.svg'
                 alt='About me'
-                className='h-full w-full object-cover'
+                className='h-fit w-full sm:h-full'
               />
             </div>
           </div>
