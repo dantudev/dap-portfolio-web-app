@@ -6,7 +6,7 @@ import Timeline from '@/components/experience/ui/Timeline'
 import {
   educationExperiences,
   workExperiences,
-} from '@app/consts/content/experience.consts'
+} from '@/components/experience/data/experience.consts'
 import { Tab, Tabs } from '@heroui/tabs'
 import { useState } from 'react'
 

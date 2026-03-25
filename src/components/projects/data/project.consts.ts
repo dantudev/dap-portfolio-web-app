@@ -6,8 +6,7 @@ import {
   SCPCrudIcon,
   ProgrammedPollsIcon,
 } from '@/assets/icons'
-
-const GITHUB_BASE_URL = 'https://github.com/DavidAntunezPerez'
+import { GITHUB_URL } from '@/app/consts/global.consts'
 
 const PORTFOLIO_PROJECTS_DATA: Project[] = [
   {
@@ -16,7 +15,7 @@ const PORTFOLIO_PROJECTS_DATA: Project[] = [
       'A modern and interactive web application for training visual perception, attention, and reading speed using Schulte tables. The project is built with React, TailwindCSS, and HeroUI, with a focus on clean design, performance, and usability.',
     type: ProjectsTabEnum.WEB,
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'ViteJS', 'HeroUI'],
-    codeLink: `${GITHUB_BASE_URL}/schulte-table-web-app`,
+    codeLink: `${GITHUB_URL}/schulte-table-web-app`,
     webLink: 'https://tableschulte.vercel.app',
     altIcon: SchulteTableIcon({ className: 'w-30 h-30 text-[#f2f2f2]' }),
     bgColor: '#222',
@@ -27,7 +26,7 @@ const PORTFOLIO_PROJECTS_DATA: Project[] = [
       'Create, schedule, and manage polls with Programmed Polls. Enjoy features such as poll voting, results visualization, and much more, all within this project.',
     type: ProjectsTabEnum.BACKEND,
     technologies: ['NodeJS', 'ExpressJS', 'Firebase', 'TypeScript', 'Vercel'],
-    codeLink: `${GITHUB_BASE_URL}/programmed-polls-backend-rest-api`,
+    codeLink: `${GITHUB_URL}/programmed-polls-backend-rest-api`,
     webLink: 'https://programmed-polls-backend-rest-api.vercel.app/',
     altIcon: ProgrammedPollsIcon({ className: 'w-30 h-30 text-[#f2f2f2]' }),
     bgColor: '#444444',
@@ -45,8 +44,8 @@ const PORTFOLIO_PROJECTS_DATA: Project[] = [
       'Jira',
       'Python',
     ],
-    codeLink: `${GITHUB_BASE_URL}/RestaurAPP_Android`,
-    webLink: 'https://github.com/DavidAntunezPerez/RestaurAPP_Android/releases',
+    codeLink: `${GITHUB_URL}/RestaurAPP_Android`,
+    webLink: `${GITHUB_URL}/RestaurAPP_Android/releases`,
     imageSrc: RestaurappImgPreview,
   },
   {
@@ -62,8 +61,8 @@ const PORTFOLIO_PROJECTS_DATA: Project[] = [
       'HTML',
       'SCSS',
     ],
-    codeLink: `${GITHUB_BASE_URL}/eteam_mkr`,
-    webLink: 'https://github.com/DavidAntunezPerez/eteam_mkr/releases',
+    codeLink: `${GITHUB_URL}/eteam_mkr`,
+    webLink: `${GITHUB_URL}/eteam_mkr/releases`,
     altIcon: EteamMakerIcon({ className: 'w-30 h-30 text-[#112770]' }),
     bgColor: '#FFEBA7',
   },
@@ -73,7 +72,7 @@ const PORTFOLIO_PROJECTS_DATA: Project[] = [
       'A web-based CRUD for managing SCP Foundation stories, built with Java, SQL, HTML, CSS, and JSP. Allows users to create, edit, and delete entries within the collaborative SCP universe.',
     type: ProjectsTabEnum.WEB,
     technologies: ['Java', 'Java Server Pages', 'SQL', 'HTML', 'Bootstrap'],
-    codeLink: `${GITHUB_BASE_URL}/TheSCPFoundation-CRUD`,
+    codeLink: `${GITHUB_URL}/TheSCPFoundation-CRUD`,
     altIcon: SCPCrudIcon({ className: 'w-30 h-30 text-[#FFEAA8]' }),
     bgColor: '#1F2029',
   },
