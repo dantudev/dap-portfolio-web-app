@@ -7,7 +7,7 @@ import {
   ProgrammedPollsIcon,
 } from '@/assets/icons'
 
-const GITHUB_BASE_URL = 'https://github.com/DavidAntunezPerez'
+const GITHUB_BASE_URL = 'https://github.com/dantudev'
 
 const PORTFOLIO_PROJECTS_DATA: Project[] = [
   {
@@ -46,7 +46,7 @@ const PORTFOLIO_PROJECTS_DATA: Project[] = [
       'Python',
     ],
     codeLink: `${GITHUB_BASE_URL}/RestaurAPP_Android`,
-    webLink: 'https://github.com/DavidAntunezPerez/RestaurAPP_Android/releases',
+    webLink: `${GITHUB_BASE_URL}/RestaurAPP_Android/releases`,
     imageSrc: RestaurappImgPreview,
   },
   {
@@ -63,7 +63,7 @@ const PORTFOLIO_PROJECTS_DATA: Project[] = [
       'SCSS',
     ],
     codeLink: `${GITHUB_BASE_URL}/eteam_mkr`,
-    webLink: 'https://github.com/DavidAntunezPerez/eteam_mkr/releases',
+    webLink: `${GITHUB_BASE_URL}/eteam_mkr/releases`,
     altIcon: EteamMakerIcon({ className: 'w-30 h-30 text-[#112770]' }),
     bgColor: '#FFEBA7',
   },
