@@ -1,0 +1,99 @@
+import { EmailIcon, SendIcon } from '@/assets/icons'
+import { Button, Form, Input, Link, Textarea } from '@heroui/react'
+
+const inputClassNames = {
+  label: 'text-black/70 font-medium',
+  input: ['bg-transparent', 'text-black/90', 'placeholder:text-black/40'],
+  innerWrapper: 'bg-transparent',
+  inputWrapper: [
+    'bg-white',
+    'shadow-none',
+    'hover:bg-white',
+    'hover:border-black/10',
+    'group-data-[focus=true]:bg-white',
+    'group-data-[focus=true]:border-black/10',
+  ],
+}
+
+function ContactForm() {
+  return (
+    <div className='h-fit w-full rounded-2xl bg-[#F2F4F7] p-8 md:w-3/5'>
+      <Form className='flex w-full gap-4'>
+        <div className='flex w-full flex-col gap-4 md:flex-row'>
+          <Input
+            isRequired
+            classNames={inputClassNames}
+            label='Name'
+            labelPlacement='outside'
+            name='name'
+            placeholder='Your name'
+            type='text'
+          />
+          <Input
+            isRequired
+            classNames={inputClassNames}
+            label='Email'
+            labelPlacement='outside'
+            name='email'
+            placeholder='your@email.com'
+            type='email'
+            endContent={
+              <EmailIcon
+                className='h-4 w-4'
+                strokeWidth={2.2}
+              />
+            }
+          />
+        </div>
+        <Input
+          classNames={inputClassNames}
+          label='Subject'
+          labelPlacement='outside'
+          name='subject'
+          placeholder="What's this about?"
+          type='text'
+        />
+        <Textarea
+          isRequired
+          classNames={inputClassNames}
+          label='Message'
+          labelPlacement='outside'
+          className='col-span-12 mb-6 md:col-span-6 md:mb-0'
+          minRows={8}
+          name='message'
+          placeholder='Tell me about your project, idea, or just say hi...'
+          type='text'
+        />
+        <div className='flex w-full items-center justify-between'>
+          <span className='text-sm font-medium'>
+            Or just reach out manually to{' '}
+            <Link
+              className='text-sm font-medium'
+              href='mailto:antunezdavid2003@gmail.com'
+            >
+              antunezdavid2003@gmail.com
+            </Link>
+          </span>
+          <Button
+            startContent={
+              <SendIcon
+                className='h-4 w-4'
+                strokeWidth={8}
+              />
+            }
+            type='submit'
+            aria-label='Submit contact form'
+            variant='flat'
+            color='primary'
+            className='font-bold'
+            onPress={() => null}
+          >
+            Submit
+          </Button>
+        </div>
+      </Form>
+    </div>
+  )
+}
+
+export default ContactForm

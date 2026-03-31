@@ -8,7 +8,7 @@ function BottomHomeButtons() {
   return (
     <div className='flex flex-wrap justify-center gap-2 md:gap-6'>
       <Button
-        variant='faded'
+        variant='flat'
         aria-label='Download my CV'
         className='font-bold'
         onPress={() => openInNewTab(CV_URL)}
@@ -23,7 +23,7 @@ function BottomHomeButtons() {
         Download my CV
       </Button>
       <Button
-        variant='faded'
+        variant='flat'
         aria-label='Contact'
         className='font-bold'
         onPress={() => goToSection('contact')}
@@ -40,7 +40,7 @@ function BottomHomeButtons() {
       <Button
         isIconOnly
         aria-label='Linkedin'
-        variant='faded'
+        variant='flat'
         onPress={() => openInNewTab(LINKEDIN_URL)}
       >
         <LinkedinIcon
@@ -52,7 +52,7 @@ function BottomHomeButtons() {
       <Button
         isIconOnly
         aria-label='Github'
-        variant='faded'
+        variant='flat'
         onPress={() => openInNewTab(GITHUB_URL)}
       >
         <GithubIcon

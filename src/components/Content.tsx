@@ -4,6 +4,7 @@ import { Experience } from './experience/ui/Experience'
 import Home from './home/Home'
 import Projects from './projects/ui/Projects'
 import Stack from './stack/ui/Stack'
+import Contact from './contact/ui/Contact'
 
 function Content() {
   return (
@@ -12,7 +13,7 @@ function Content() {
         <section
           key={section.id}
           id={section.id}
-          className={`${section.bg ?? ''} flex min-h-dvh w-full items-center justify-center px-4 md:px-[5%] lg:px-[8%] xl:px-36`}
+          className='flex min-h-dvh w-full items-center justify-center px-4 md:px-[5%] lg:px-[8%] xl:px-36'
         >
           {section.id === 'home' ? (
             <Home />
@@ -24,9 +25,9 @@ function Content() {
             <Projects />
           ) : section.id === 'stack' ? (
             <Stack />
-          ) : (
-            <h1 className='text-5xl font-bold'>{section.label}</h1>
-          )}
+          ) : section.id === 'contact' ? (
+            <Contact />
+          ) : null}
         </section>
       ))}
     </main>

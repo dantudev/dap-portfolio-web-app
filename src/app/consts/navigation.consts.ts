@@ -1,4 +1,3 @@
-// TODO: Remove bg colors and handle them via tailwind
 export const MENU_ITEMS = [
   { id: 'home', label: 'Home', href: '#home' },
   { id: 'about', label: 'About', href: '#about' },
@@ -13,7 +12,6 @@ export const MENU_ITEMS = [
     id: 'contact',
     label: 'Contact',
     href: '#contact',
-    bg: 'bg-pink-100',
     showInHeader: false,
   },
 ]
