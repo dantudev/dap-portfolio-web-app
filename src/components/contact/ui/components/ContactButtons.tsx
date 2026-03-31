@@ -5,7 +5,7 @@ import { Button } from '@heroui/react'
 
 function ContactButtons() {
   return (
-    <div className='flex flex-col flex-wrap items-center justify-center gap-2 md:gap-4'>
+    <div className='flex md:flex-col flex-wrap items-center justify-center gap-2 md:gap-4'>
       <div className='flex flex-wrap justify-center gap-2 md:gap-4'>
         <Button
           aria-label='LinkedIn'

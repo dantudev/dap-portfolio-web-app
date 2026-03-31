@@ -16,9 +16,23 @@ const inputClassNames = {
 }
 
 function ContactForm() {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const data = Object.fromEntries(new FormData(e.currentTarget))
+
+    if (data.name && data.email && data.message) {
+      console.log(data)
+    } else {
+      return
+    }
+  }
+
   return (
     <div className='h-fit w-full rounded-2xl bg-[#F2F4F7] p-8 md:w-3/5'>
-      <Form className='flex w-full gap-4'>
+      <Form
+        className='flex w-full gap-4'
+        onSubmit={onSubmit}
+      >
         <div className='flex w-full flex-col gap-4 md:flex-row'>
           <Input
             isRequired
@@ -48,6 +62,7 @@ function ContactForm() {
         <Input
           classNames={inputClassNames}
           label='Subject'
+          isRequired
           labelPlacement='outside'
           name='subject'
           placeholder="What's this about?"
@@ -75,18 +90,12 @@ function ContactForm() {
             </Link>
           </span>
           <Button
-            startContent={
-              <SendIcon
-                className='h-4 w-4'
-                strokeWidth={8}
-              />
-            }
+            startContent={<SendIcon className='h-4 w-4 shrink-0' />}
             type='submit'
             aria-label='Submit contact form'
             variant='flat'
             color='primary'
-            className='font-bold'
-            onPress={() => null}
+            className='w-fit px-5 font-bold'
           >
             Submit
           </Button>
