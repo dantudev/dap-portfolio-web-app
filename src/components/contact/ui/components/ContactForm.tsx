@@ -1,5 +1,6 @@
 import { EmailIcon, SendIcon } from '@/assets/icons'
 import { Button, Form, Input, Link, Textarea } from '@heroui/react'
+import { sendContactEmail } from '../../data/email.api'
 
 const inputClassNames = {
   label: 'text-black/70 font-medium',
@@ -21,7 +22,14 @@ function ContactForm() {
     const data = Object.fromEntries(new FormData(e.currentTarget))
 
     if (data.name && data.email && data.message) {
-      console.log(data)
+      sendContactEmail({
+        app_name: __APP_NAME__,
+        from_name: String(data.name),
+        from_email: String(data.email),
+        subject: String(data.subject || ''),
+        message: String(data.message),
+      })
+      e.currentTarget.reset()
     } else {
       return
     }
@@ -81,7 +89,7 @@ function ContactForm() {
         />
         <div className='flex w-full items-center justify-between'>
           <span className='text-sm font-medium'>
-            Or just reach out manually to{' '}
+            or just reach out manually to{' '}
             <Link
               className='text-sm font-medium'
               href='mailto:antunezdavid2003@gmail.com'

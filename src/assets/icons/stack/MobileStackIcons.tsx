@@ -35,14 +35,14 @@ export const KotlinIcon = (props: SVGProps<SVGSVGElement>) => {
           gradientUnits='userSpaceOnUse'
           gradientTransform='translate(48 -1.13738e-06) rotate(180) scale(48)'
         >
-          <stop stop-color='#E44857' />
+          <stop stopColor='#E44857' />
           <stop
             offset='0.504494'
-            stop-color='#C711E1'
+            stopColor='#C711E1'
           />
           <stop
             offset='1'
-            stop-color='#7F52FF'
+            stopColor='#7F52FF'
           />
         </radialGradient>
       </defs>
