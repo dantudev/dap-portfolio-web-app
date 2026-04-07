@@ -23,9 +23,13 @@ export const sendContactEmail = async ({
   const platform = navigator.platform
   const language = navigator.language
   const screen_resolution = `${window.screen.width}x${window.screen.height}`
-  const referrer = document.referrer
-    ? new URL(document.referrer).hostname
-    : 'Direct'
+
+  let referrer = 'Direct'
+  try {
+    if (document.referrer) referrer = new URL(document.referrer).hostname
+  } catch {
+    referrer = document.referrer || 'Direct'
+  }
 
   try {
     const response = await emailjs.send(

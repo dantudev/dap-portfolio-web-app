@@ -14,9 +14,7 @@ function Projects() {
   )
 
   return (
-    <article
-      className='flex min-h-dvh w-full flex-col gap-6 px-6 py-6 md:px-12'
-    >
+    <article className='flex min-h-dvh w-full flex-col gap-6 px-6 py-6 md:px-12'>
       <div className='flex w-full flex-col items-center justify-between gap-6 md:flex-row'>
         <h1 className='text-[clamp(1.75rem,3vw,2.5rem)] font-bold'>Projects</h1>
 
@@ -50,7 +48,7 @@ function Projects() {
           return project.type === selectedTab
         }).map((project, index) => (
           <ProjectCard
-            key={index}
+            key={`${index}-${project.title}`}
             project={project}
             altIcon={project.altIcon}
             bgColor={project.bgColor}

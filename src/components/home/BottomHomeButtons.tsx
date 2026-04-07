@@ -39,7 +39,7 @@ function BottomHomeButtons() {
       </Button>
       <Button
         isIconOnly
-        aria-label='Linkedin'
+        aria-label='LinkedIn'
         variant='flat'
         onPress={() => openInNewTab(LINKEDIN_URL)}
       >
@@ -51,7 +51,7 @@ function BottomHomeButtons() {
       </Button>
       <Button
         isIconOnly
-        aria-label='Github'
+        aria-label='GitHub'
         variant='flat'
         onPress={() => openInNewTab(GITHUB_URL)}
       >

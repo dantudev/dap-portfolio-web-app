@@ -21,7 +21,7 @@ function ContactButtons() {
           LinkedIn
         </Button>
         <Button
-          aria-label='Github'
+          aria-label='GitHub'
           variant='flat'
           className='font-bold'
           onPress={() => openInNewTab(GITHUB_URL)}
