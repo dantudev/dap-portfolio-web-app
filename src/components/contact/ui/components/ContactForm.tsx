@@ -100,8 +100,8 @@ function ContactForm() {
             />
           </div>
         )}
-        <div className='flex w-full items-center justify-between'>
-          <span className='text-sm font-medium'>
+        <div className='flex w-full flex-col-reverse items-center justify-between gap-4 md:flex-row md:gap-2'>
+          <span className='text-center text-sm font-medium'>
             or just reach out manually to{' '}
             <Link
               className='text-sm font-medium'

@@ -5,7 +5,6 @@ export { LinkedinIcon } from './LinkedinIcon'
 export { CalendarIcon } from './CalendarIcon'
 export { URLLinkIcon } from './LinkIcon'
 export { SendIcon } from './SendIcon'
-export { SpinnerIcon } from './SpinnerIcon'
 
 export * from './FallbackProjectIcons'
 export * from './ProjectChipsIcons'
