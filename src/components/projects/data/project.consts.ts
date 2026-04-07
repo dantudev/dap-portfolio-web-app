@@ -1,5 +1,6 @@
 import { ProjectsTabEnum, type Project } from '../types/projects.types'
-import RestaurappImgPreview from '@assets/images/restaurapp_preview.webp'
+import RestaurappImgPreview from '@assets/images/restaurapp-preview.webp'
+import DantudevPortfolioImgPreview from '@assets/images/dap-web-portfolio-preview.webp'
 import {
   EteamMakerIcon,
   SchulteTableIcon,
@@ -10,11 +11,35 @@ import { GITHUB_URL } from '@/app/consts/global.consts'
 
 const PORTFOLIO_PROJECTS_DATA: Project[] = [
   {
+    title: 'Dantudev Portfolio',
+    description:
+      'This one is really self-explanatory, isn’t it? Built with React, TypeScript, TailwindCSS, and Vite, this portfolio website showcases my projects, experience, and skills in a clean and modern design.',
+    type: ProjectsTabEnum.WEB,
+    technologies: [
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'ViteJS',
+      'HeroUI',
+      'EmailJS',
+    ],
+    codeLink: `${GITHUB_URL}/dap-portfolio-web-app`,
+    imageSrc: DantudevPortfolioImgPreview,
+    bgColor: '#fff',
+  },
+  {
     title: 'Schulte Table',
     description:
       'A modern and interactive web application for training visual perception, attention, and reading speed using Schulte tables. The project is built with React, TailwindCSS, and HeroUI, with a focus on clean design, performance, and usability.',
     type: ProjectsTabEnum.WEB,
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'ViteJS', 'HeroUI'],
+    technologies: [
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'ViteJS',
+      'HeroUI',
+      'EmailJS',
+    ],
     codeLink: `${GITHUB_URL}/schulte-table-web-app`,
     webLink: 'https://tableschulte.vercel.app',
     altIcon: SchulteTableIcon({ className: 'w-30 h-30 text-[#f2f2f2]' }),

@@ -49,9 +49,9 @@ function Projects() {
         {PORTFOLIO_PROJECTS_DATA.filter((project) => {
           if (selectedTab === ProjectsTabEnum.ALL) return true
           return project.type === selectedTab
-        }).map((project) => (
+        }).map((project, index) => (
           <ProjectCard
-            key={project.title}
+            key={index}
             project={project}
             altIcon={project.altIcon}
             bgColor={project.bgColor}
