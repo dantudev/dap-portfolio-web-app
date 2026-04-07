@@ -1,16 +1,16 @@
 import { MENU_ITEMS } from '@app/consts/navigation.consts'
 import {
-  Button,
-  Link,
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  NavbarMenu,
-  NavbarMenuItem,
-  NavbarMenuToggle,
+    Button,
+    Link,
+    Navbar,
+    NavbarBrand,
+    NavbarContent,
+    NavbarItem,
+    NavbarMenu,
+    NavbarMenuItem,
+    NavbarMenuToggle,
 } from '@heroui/react'
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -21,7 +21,7 @@ function Header() {
   const observer = useRef<IntersectionObserver | null>(null)
   const ignoreObserver = useRef(false)
 
-  const handleNavClick = (href: string) => {
+  const handleNavClick = useCallback((href: string) => {
     setIsMenuOpen(false)
     const el = document.querySelector<HTMLElement>(href)
     if (!el) return
@@ -45,7 +45,7 @@ function Header() {
     }, 600)
 
     history.pushState(null, '', href)
-  }
+  }, [])
 
   useEffect(() => {
     const sections = MENU_ITEMS.map((item) =>
@@ -82,7 +82,7 @@ function Header() {
       const hash = window.location.hash
       requestAnimationFrame(() => handleNavClick(hash))
     }
-  }, [])
+  }, [handleNavClick])
 
   return (
     <Navbar

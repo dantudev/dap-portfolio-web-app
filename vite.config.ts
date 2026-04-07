@@ -2,9 +2,13 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react-swc'
 import path from 'path'
 import { defineConfig } from 'vite'
+import { name } from './package.json'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  define: {
+    __APP_NAME__: JSON.stringify(name),
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

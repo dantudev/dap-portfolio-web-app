@@ -4,6 +4,7 @@ export { MapPinIcon } from './MapPinIcon'
 export { LinkedinIcon } from './LinkedinIcon'
 export { CalendarIcon } from './CalendarIcon'
 export { URLLinkIcon } from './LinkIcon'
+export { SendIcon } from './SendIcon'
 
 export * from './FallbackProjectIcons'
 export * from './ProjectChipsIcons'

@@ -1,5 +1,13 @@
 # Project Changelog
 
+## [1.0.0]
+
+- Initial release of the portfolio web app with all sections and features implemented, including Home, About, Experience, Projects, Stack, and Contact sections, along with responsive design and functional links.
+- Updated Documentation and README with project details, features, roadmap, tech stack, and getting started instructions.
+- Added Contact section and integrated EmailJS for functional contact form.
+- Improved responsive design and overall user experience across all sections.
+- SEO optimizations added with meta tags, sitemap, and robots.txt for better search engine indexing.
+
 ## [0.5.1]
 
 - docs(utils): unified architecture and updated utils function comments

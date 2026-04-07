@@ -1,14 +1,15 @@
+import '@fontsource-variable/inter'
+import { HeroUIProvider, ToastProvider } from '@heroui/react'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import '@fontsource-variable/inter'
-import './styles/index.css'
 import App from './app/App.tsx'
-import { HeroUIProvider } from '@heroui/react'
+import './styles/index.css'
 
 createRoot(document.getElementById('root')!).render(
-  <HeroUIProvider>
-    <StrictMode>
+  <StrictMode>
+    <HeroUIProvider>
+      <ToastProvider />
       <App />
-    </StrictMode>
-  </HeroUIProvider>,
+    </HeroUIProvider>
+  </StrictMode>,
 )
