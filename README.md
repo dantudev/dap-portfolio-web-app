@@ -6,7 +6,7 @@
 [![Vite](https://img.shields.io/badge/Vite-Frontend%20Build-646cff?logo=vite&logoColor=yellow)](https://vitejs.dev/)
 [![Heroui React](https://img.shields.io/badge/UI-HeroUI-000000)](https://heroui.com/)
 
-Hi, I’m David aka dantudev
+Hi, I’m dantudev - David Antúnez Pérez
 
 Welcome to my portfolio! This is where I showcase my projects, skills, and experience as a developer. I enjoy building clean, efficient, and scalable code, experimenting with modern technologies, and constantly learning new tools to improve my craft.
 
