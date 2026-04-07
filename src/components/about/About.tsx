@@ -3,7 +3,6 @@ import { ABOUT_CONTENT } from './data/about.consts'
 export function About() {
   return (
     <section
-      id='about'
       className='flex min-h-dvh w-full flex-col items-start justify-center gap-6 px-6 py-16 lg:px-12'
     >
       <h1 className='text-[clamp(1.75rem,3vw,2.5rem)] font-bold'>About me</h1>

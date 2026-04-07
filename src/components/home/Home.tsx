@@ -7,7 +7,6 @@ import ScrollDownIndicator from './scroll-down-indicator/ScrollDownIndicator'
 function Home() {
   return (
     <div
-      id='home'
       className='flex h-full w-full flex-col items-center'
     >
       <div className='flex flex-1 flex-col items-center justify-center gap-4 px-4'>

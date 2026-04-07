@@ -1,10 +1,9 @@
-import ContactForm from './components/ContactForm'
 import ContactButtons from './components/ContactButtons'
+import ContactForm from './components/ContactForm'
 
 function Contact() {
   return (
     <article
-      id='contact'
       className='flex flex-col md:flex-row min-h-dvh justify-center items-center w-full gap-12 px-6 py-6 md:px-12'
     >
       <div className='flex flex-col items-center justify-center gap-4 w-full md:w-2/5'>

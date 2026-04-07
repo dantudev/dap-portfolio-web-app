@@ -4,7 +4,6 @@ import { StackBentoGrid } from './components/StackBentoGrid'
 function Stack() {
   return (
     <article
-      id='stack'
       className='flex min-h-dvh w-full flex-col gap-6 px-6 py-6 md:px-12'
     >
       <div className='flex w-full flex-col items-start justify-center gap-6'>

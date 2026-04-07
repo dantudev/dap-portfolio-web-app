@@ -1,7 +1,7 @@
 import { EmailIcon, SendIcon } from '@/assets/icons'
 import { Button, Form, Input, Link, Spinner, Textarea } from '@heroui/react'
-import { sendContactEmail } from '../../data/email.api'
 import { useState } from 'react'
+import { sendContactEmail } from '../../data/email.api'
 
 const inputClassNames = {
   label: 'text-black/70 font-medium',
@@ -25,6 +25,7 @@ function ContactForm() {
     const data = Object.fromEntries(new FormData(e.currentTarget))
 
     if (data.name && data.email && data.message && data.subject) {
+      const form = e.currentTarget
       setIsLoading(true)
       sendContactEmail({
         app_name: __APP_NAME__,
@@ -33,13 +34,12 @@ function ContactForm() {
         from_subject: String(data.subject),
         from_message: String(data.message),
       })
+        .then(() => {
+          form.reset()
+        })
         .finally(() => {
           setIsLoading(false)
         })
-        .catch(() => {
-          setIsLoading(false)
-        })
-      e.currentTarget.reset()
     }
   }
 
