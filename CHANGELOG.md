@@ -1,5 +1,9 @@
 # Project Changelog
 
+## [1.0.0]
+
+- Initial release of the portfolio web app with all sections and features implemented, including Home, About, Experience, Projects, Stack, and Contact sections, along with responsive design and functional links.
+
 ## [0.5.1]
 
 - docs(utils): unified architecture and updated utils function comments
