@@ -1,5 +1,10 @@
 # Project Changelog
 
+## [1.0.1]
+
+- docs(seo): improved SEO optimizations with detailed meta tags and manifest.json descriptions for enhanced search engine visibility and user engagement.
+- fix(components): fixed Tech stack content in mobile view and centered technologies in stack section for better visual appeal and readability on smaller screens.
+
 ## [1.0.0]
 
 - Initial release of the portfolio web app with all sections and features implemented, including Home, About, Experience, Projects, Stack, and Contact sections, along with responsive design and functional links.
