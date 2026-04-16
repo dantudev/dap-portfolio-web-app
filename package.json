@@ -13,6 +13,7 @@
     "@emailjs/browser": "^4.4.1",
     "@fontsource-variable/inter": "^5.2.8",
     "@heroui/react": "^2.8.7",
+    "@vercel/analytics": "^2.0.1",
     "framer-motion": "^12.23.26",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"

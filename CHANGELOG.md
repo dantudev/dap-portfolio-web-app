@@ -2,6 +2,7 @@
 
 ## [1.0.1]
 
+- feat(analytics): added vercel/analytics
 - docs(seo): improved SEO optimizations with detailed meta tags and manifest.json descriptions for enhanced search engine visibility and user engagement.
 - fix(components): fixed Tech stack content in mobile view and centered technologies in stack section for better visual appeal and readability on smaller screens
 - chore: added .env.example file
