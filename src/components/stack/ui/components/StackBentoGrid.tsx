@@ -7,11 +7,13 @@ type BentoItemProps = {
 
 function BentoItem({ section }: BentoItemProps) {
   return (
-    <div className={`rounded-2xl bg-[#F2F4F7] p-5 ${section.className}`}>
+    <div className={`rounded-2xl bg-[#F2F4F7] p-6 ${section.className}`}>
       <div className='flex h-full flex-col gap-4'>
-        <h2 className='text-lg font-semibold'>{section.title}</h2>
+        <h2 className='text-center text-lg font-semibold md:text-start'>
+          {section.title}
+        </h2>
 
-        <div className='flex flex-wrap gap-6'>
+        <div className='grid grid-cols-[repeat(auto-fit,96px)] justify-center gap-6'>
           {section.items.map((item) => (
             <StackItem
               key={item.title + item.color}
