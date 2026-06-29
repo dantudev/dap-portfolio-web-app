@@ -6,6 +6,7 @@ import {
   SchulteTableIcon,
   SCPCrudIcon,
   ProgrammedPollsIcon,
+  RobotIcon,
 } from '@/assets/icons'
 import { GITHUB_URL } from '@/app/consts/global.consts'
 
@@ -100,6 +101,22 @@ const PORTFOLIO_PROJECTS_DATA: Project[] = [
     codeLink: `${GITHUB_URL}/TheSCPFoundation-CRUD`,
     altIcon: SCPCrudIcon({ className: 'w-30 h-30 text-[#FFEAA8]' }),
     bgColor: '#1F2029',
+  },
+  {
+    title: 'VLR Daily Digest Bot',
+    description:
+      'An automated backend system that tracks, filters, and ranks upcoming Valorant competitive matches using the Gemini LLM. It delivers a personalized, high-priority digest directly to Telegram daily, operating entirely serverless.',
+    type: ProjectsTabEnum.BACKEND,
+    technologies: [
+      'Python',
+      'GitHub Actions',
+      'Gemini API',
+      'Telegram API',
+      'Ruff',
+    ],
+    codeLink: `${GITHUB_URL}/vlr-daily-digest-bot`,
+    altIcon: RobotIcon({ className: 'w-30 h-30 text-[#FF5461]' }),
+    bgColor: '#0F1923',
   },
 ]
 

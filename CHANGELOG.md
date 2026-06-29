@@ -1,5 +1,10 @@
 # Project Changelog
 
+## [1.1.0]
+
+- feat(projects): projects section update and pagination support
+- fix(projects): fixed project cards height causing scroll issues
+
 ## [1.0.1]
 
 - feat(analytics): added vercel/analytics
