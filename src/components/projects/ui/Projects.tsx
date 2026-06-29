@@ -6,7 +6,7 @@ import { firstLetterUppercase } from '@/utils'
 import { Pagination } from '@heroui/pagination'
 import { Tab, Tabs } from '@heroui/tabs'
 import { useMemo, useState } from 'react'
-import PORTFOLIO_PROJECTS_DATA from '../data/project.consts'
+import PORTFOLIO_PROJECTS_DATA from '../data/projects.consts'
 import ProjectCard from './ProjectCard'
 
 const PROJECTS_PER_PAGE = 6
